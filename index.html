@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ficha de Personagem RPG</title>
+</head>
+<body>
+
+  <div id="character-form">
+    <!-- Seção para cadastrar o personagem -->
+    <!-- Aqui você pode adicionar campos para nome do personagem, nome do jogador, status, etc. -->
+    <button onclick="submitCharacter()">Cadastrar Personagem</button>
+  </div>
+
+  <div id="character-sheet-container">
+    <!-- Seção para mostrar as informações do personagem cadastrado -->
+    <!-- Aqui você pode exibir o nome do personagem, nome do jogador, status, etc. -->
+    <div id="character-sheet" class="split-section">
+      <div class="left-align">
+        <h1>Dados Pessoais</h1>
+        <label for="char-name">Nome:</label>
+        <input type="text" id="char-name" name="char-name">
+
+        <label for="char-age">Idade:</label>
+        <input type="number" id="char-age" name="char-age" min="0">
+
+        <label for="char-height">Altura:</label>
+        <input type="number" id="char-height" name="char-height">
+
+        <label for="char-weight">Peso:</label>
+        <input type="number" id="char-weight" name="char-weight">
+
+        <label for="char-hair">Cabelo:</label>
+        <input type="text" id="char-hair" name="char-hair">
+
+        <label for="char-eyes">Olhos:</label>
+        <input type="text" id="char-eyes" name="char-eyes">
+
+        <label for="char-skin">Pele:</label>
+        <input type="text" id="char-skin" name="char-skin">
+
+        <label for="char-hand">Mão:</label>
+        <input type="text" id="char-hand" name="char-hand">
+
+        <label for="char-gender">Sexo:</label>
+        <select id="char-gender" name="char-gender">
+          <option value="male">Masculino</option>
+          <option value="female">Feminino</option>
+          <!-- Adicione mais opções conforme necessário -->
+        </select>
+
+        <label for="char-race">Raça:</label>
+        <input type="text" id="char-race" name="char-race">
+
+        <label for="char-class">Classe:</label>
+        <input type="text" id="char-class" name="char-class">
+      </div>
+    </div>
+
+    <!-- Seção para as características do personagem -->
+    <!-- Adicione campos para força, agilidade, inteligência, carisma, mira, HP, carga, etc. -->
+    <div id="attributes-section" class="split-section">
+      <div class="right-align">
+        <h1>Atributos</h1>
+        <label for="strength">Força:</label>
+        <input type="number" id="strength" name="strength">
+
+        <label for="agility">Agilidade:</label>
+        <input type="number" id="agility" name="agility">
+
+        <label for="intelligence">Inteligência:</label>
+        <input type="number" id="intelligence" name="intelligence">
+
+        <label for="charisma">Carisma:</label>
+        <input type="number" id="charisma" name="charisma">
+
+        <label for="aim">Mira:</label>
+        <input type="number" id="aim" name="aim">
+
+        <label for="hp1">HP 1:</label>
+        <input type="number" id="hp1" name="hp1">
+
+        <label for="hp2">HP 2:</label>
+        <input type="number" id="hp2" name="hp2">
+
+        <label for="attack">Ataque:</label>
+        <input type="number" id="attack" name="attack">
+
+        <label for="defense">Defesa:</label>
+        <input type="number" id="defense" name="defense">
+
+        <label for="cargo">Carga:</label>
+        <input type="number" id="cargo" name="cargo">
+      </div>
+    </div>
+  </div>
+
+<!-- ... Códigos anteriores ... -->
+
+<div id="skills-section">
+  <!-- Seção para habilidades -->
+  <!-- Adicione campos para habilidades -->
+  <h2>Habilidades</h2>
+<div id="skills" class="split-section">
+  <div class="left-align">
+    <label for="new-skill">Nova Habilidade:</label>
+    <input type="text" id="new-skill" name="new-skill">
+    <button onclick="addSkill()">Adicionar Habilidade</button>
+  </div>
+
+  <div class="right-align">
+    <h3>Habilidades Pré-Cadastradas</h3>
+    <ul id="skill-list">
+      <!-- Lista de habilidades vai aqui -->
+      <li><span>+1 ac MG</span><button onclick="removeSkill('+1 ac MG')">Remover</button></li>
+      <li><span>+1 Combo MG</span><button onclick="removeSkill('+1 Combo MG')">Remover</button></li>
+    </ul>
+  </div>
+</div>
+
+<div id="inventory-section">
+  <!-- Seção para inventário -->
+  <!-- Adicione campos para inventário -->
+  <h2>Inventário</h2>
+  <div id="items" class="split-section">
+      
+
+  </div>
+</div>
+
+<div id="idioma-section">
+  <h2>Idiomas</h2>
+  <div class="left-align">
+    <label for="languages">Idiomas:</label>
+    <textarea id="languages" name="languages"></textarea>
+  </div>
+</div>
+
+
+<div id="money-section">
+  <!-- Seção para dinheiro -->
+  <!-- Adicione campos para dinheiro -->
+  <h2>Dinheiro</h2>
+  <div id="money" class="split-section">
+      <div class="left-align">
+          <label for="platinum">PL:</label>
+          <input type="text" id="platinum" name="platinum">
+
+          <label for="gold">PO:</label>
+          <input type="text" id="gold" name="gold">
+
+          <label for="copper">PB:</label>
+          <input type="text" id="copper" name="copper">
+
+          <label for="silver">PP:</label>
+          <input type="text" id="silver" name="silver">
+
+          <label for="currency">PC:</label>
+          <input type="text" id="currency" name="currency">
+          <!-- Adicione mais campos conforme necessário -->
+      </div>
+  </div>
+</div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

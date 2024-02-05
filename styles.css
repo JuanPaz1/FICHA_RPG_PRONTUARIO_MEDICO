@@ -1,0 +1,96 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2d1b00; /* Um tom de marrom escuro para um toque medieval */
+    color: #e0d3b9; /* Uma cor clara para o texto */
+    line-height: 1.6;
+  }
+
+  #character-sheet-container{
+    display: flex;
+    
+}   
+    .left-align label,
+    .left-align input,
+    .left-align select {
+            display: block;
+            margin-bottom: 10px;
+    }
+
+    .right-align label,
+    .right-align input,
+    .right-align select {
+            display: block;
+            margin-bottom: 10px;
+    }
+
+.container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #302011; /* Um tom mais escuro para o fundo da ficha */
+        border: 2px solid #e0d3b9; /* Uma borda clara para destacar a ficha */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Uma sombra sutil para dar profundidade */
+}
+  
+.form-section {
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+        border: 2px solid #6b3a00; /* Uma borda mais escura para os campos da ficha */
+        box-sizing: border-box;
+        text-align: left;
+        background-color: #44341c; /* Um tom escuro para o fundo dos campos */
+}
+  
+  .split-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .left-align,
+  .right-align {
+    width: 100%; /* Alterado para ocupar toda a largura da coluna */
+    box-sizing: border-box;
+  }
+  
+  /* Adicionando uma nova classe para rótulos */
+  .form-label {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 5px;
+    color: #e0d3b9; /* Uma cor clara para os rótulos */
+  }
+  
+  /* Adicionando uma nova classe para campos de entrada */
+  .form-input {
+    width: 65%; /* Ajuste conforme necessário para a largura dos campos de entrada */
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo específico para a seção de habilidades */
+  #skills-section {
+    width: 100%;
+  }
+  
+  /* Estilo específico para a seção de habilidades */
+#skills-section h2 {
+    text-align: center;
+    color: #e0d3b9; /* Uma cor clara para o título das habilidades */
+  }
+  
+  #skills-section .split-section {
+    flex-direction: row;
+  }
+  
+  #skills-section .left-align,
+  #skills-section .right-align {
+    width: 48%;
+  }
