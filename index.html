@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
   <div id="character-form">
     <!-- Seção para cadastrar o personagem -->
     <!-- Aqui você pode adicionar campos para nome do personagem, nome do jogador, status, etc. -->
@@ -101,33 +102,40 @@
 
 <div id="skills-section">
   <!-- Seção para habilidades -->
-  <!-- Adicione campos para habilidades -->
   <h2>Habilidades</h2>
-<div id="skills" class="split-section">
-  <div class="left-align">
-    <label for="new-skill">Nova Habilidade:</label>
-    <input type="text" id="new-skill" name="new-skill">
-    <button onclick="addSkill()">Adicionar Habilidade</button>
+  <div class="split-section">
+    <div class="left-align">
+      <!-- Campo para cadastrar uma nova habilidade -->
+      <label for="new-skill">Nova Habilidade:</label>
+      <input type="text" id="new-skill" name="new-skill">
+      <button onclick="addSkill()">Adicionar Habilidade</button>
+      <button id="remove-skill-btn" onclick="toggleRemoveMode()">Remover Habilidades</button>
+    </div>
   </div>
 
-  <div class="right-align">
-    <h3>Habilidades Pré-Cadastradas</h3>
-    <ul id="skill-list">
-      <!-- Lista de habilidades vai aqui -->
-      <li><span>+1 ac MG</span><button onclick="removeSkill('+1 ac MG')">Remover</button></li>
-      <li><span>+1 Combo MG</span><button onclick="removeSkill('+1 Combo MG')">Remover</button></li>
-    </ul>
-  </div>
+  <!-- Lista de habilidades -->
+  <ul id="skill-list"></ul>
 </div>
+
+
+
 
 <div id="inventory-section">
   <!-- Seção para inventário -->
-  <!-- Adicione campos para inventário -->
   <h2>Inventário</h2>
-  <div id="items" class="split-section">
-      
-
+  <div class="split-section">
+    <div class="left-align">
+      <!-- Campos para cadastrar um novo item -->
+      <label for="new-item">Novo Item:</label>
+      <input type="text" id="new-item" name="new-item">
+      <label for="item-quantity">Quantidade:</label>
+      <input type="number" id="item-quantity" name="item-quantity" value="1">
+      <button onclick="addItem()">Adicionar Item</button>
+    </div>
   </div>
+
+  <!-- Lista de itens do inventário -->
+  <ul id="inventory-list"></ul>
 </div>
 
 <div id="idioma-section">

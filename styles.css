@@ -1,15 +1,18 @@
 body {
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #2d1b00; /* Um tom de marrom escuro para um toque medieval */
-    color: #e0d3b9; /* Uma cor clara para o texto */
-    line-height: 1.6;
-  }
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  line-height: 1.6;
+  background-image: url('file:///C:/Users/juanaguiar/Desktop/Trabalhos/Juan/HTML%20+%20CSS/RPG/imagens/Arte%20gate.jpg'); /* Caminho completo para a imagem */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-position: center center; /* Centraliza a imagem */
+}
+
+
 
   #character-sheet-container{
     display: flex;
@@ -29,24 +32,27 @@ body {
             margin-bottom: 10px;
     }
 
-.container {
-        max-width: 800px;
-        margin: auto;
-        padding: 20px;
-        background-color: #302011; /* Um tom mais escuro para o fundo da ficha */
-        border: 2px solid #e0d3b9; /* Uma borda clara para destacar a ficha */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Uma sombra sutil para dar profundidade */
-}
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #44341c; /* Um tom mais escuro para o fundo da ficha */
+      border: 2px solid #e0d3b9; /* Uma borda clara para destacar a ficha */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Uma sombra sutil para dar profundidade */
+      color: #e0d3b9; /* Cor do texto dentro do contêiner */
+  }
   
-.form-section {
-        width: 100%;
-        margin: 20px 0;
-        padding: 20px;
-        border: 2px solid #6b3a00; /* Uma borda mais escura para os campos da ficha */
-        box-sizing: border-box;
-        text-align: left;
-        background-color: #44341c; /* Um tom escuro para o fundo dos campos */
-}
+  .form-section {
+      width: 100%;
+      margin: 20px 0;
+      padding: 20px;
+      border: 2px solid #6b3a00; /* Uma borda mais escura para os campos da ficha */
+      box-sizing: border-box;
+      text-align: left;
+      background-color: #302011; /* Um tom escuro para o fundo dos campos */
+      color: #ffffff; /* Cor do texto dentro dos campos */
+  }
+  
   
   .split-section {
     display: flex;
